@@ -1,7 +1,7 @@
 extends ../layout
 block main
-    h1 abafglksdjklgjskdlfj
-    div
-       include ../modules/abc.jade
-block asd
-    h1 dsfsdf
+  include ../modules/slider
+  section#top-service
+    each service in ['Truyền hình KTS','Internet cáp quang','smart motor']
+      div.service-detail
+        h2.service-title=service
